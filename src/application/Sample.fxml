@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="root" prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+	<children>
+		<Pane layoutX="38.0" layoutY="40.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 15;" AnchorPane.bottomAnchor="40.80000000000001" AnchorPane.leftAnchor="38.0" AnchorPane.rightAnchor="62.799999999999955" AnchorPane.topAnchor="40.0">
+			<children>
+				<Label alignment="CENTER" contentDisplay="TOP" layoutX="-3.0" layoutY="14.0" prefHeight="56.0" prefWidth="510.0" text="Giriş Yap" textAlignment="JUSTIFY" textFill="#128ea6ad">
+					<font>
+						<Font size="32.0" />
+					</font>
+				</Label>
+				<Label alignment="CENTER" layoutX="-1.0" layoutY="65.0" prefHeight="27.0" prefWidth="499.0" text="Lütfen Giriş Yapın" textAlignment="CENTER">
+					<font>
+						<Font size="18.0" />
+					</font>
+				</Label>
+				<TextField fx:id="kullaniciAdi" layoutX="88.0" layoutY="105.0" prefHeight="27.0" prefWidth="323.0" promptText="Kullanıcı Adı" />
+				<PasswordField fx:id="parola" layoutX="87.0" layoutY="146.0" prefHeight="27.0" prefWidth="323.0" promptText="Parola" />
+				<JFXButton fx:id="button" layoutX="207.0" layoutY="192.0" onAction="#girisYap" style="-fx-background-color: #128ea6; -fx-background-radius: 15;" text="Giriş Yap" textFill="#fafafa">
+					<font>
+						<Font size="16.0" />
+					</font>
+				</JFXButton>
+				<Label fx:id="sonuc" alignment="CENTER" layoutX="2.0" layoutY="252.0" prefHeight="36.0" prefWidth="499.0" style="-fx-background-color: white;" textFill="#2a2a51">
+					<font>
+						<Font size="25.0" />
+					</font>
+				</Label>
+				<Label fx:id="sonuc1" alignment="CENTER" layoutX="-1.0" layoutY="245.0" prefHeight="43.0" prefWidth="499.0" style="-fx-background-color: WHİTE;" textAlignment="CENTER" textFill="#1d1d1e">
+					<font>
+						<Font size="26.0" />
+					</font>
+				</Label>
+			</children>
+		</Pane>
+	</children>
+</AnchorPane>
